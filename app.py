@@ -4,9 +4,9 @@ import pickle
 import os
 
 # Load files safely
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+import pickle
 
-model = pickle.load(open(os.path.join(BASE_DIR, "model.pkl"), "rb"))
+model = pickle.load(open("model.pkl", "rb"))
 scaler = pickle.load(open(os.path.join(BASE_DIR, "scaler.pkl"), "rb"))
 columns = pickle.load(open(os.path.join(BASE_DIR, "columns.pkl"), "rb"))
 
