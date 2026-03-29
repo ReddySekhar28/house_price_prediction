@@ -7,8 +7,8 @@ import os
 import pickle
 
 model = pickle.load(open("model.pkl", "rb"))
-scaler = pickle.load(open(os.path.join(BASE_DIR, "scaler.pkl"), "rb"))
-columns = pickle.load(open(os.path.join(BASE_DIR, "columns.pkl"), "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
+columns = pickle.load(open("columns.pkl", "rb"))
 
 # App title
 st.set_page_config(page_title="House Price Prediction", page_icon="🏠")
